@@ -1,0 +1,81 @@
+1)<input> is
+a) a format tag.
+b)an empty tag.
+c)All of the above
+d)None of the above
+
+2)How to insert an image in HTML?
+a)<img href="jtp.png"/>
+b)<img url="jtp.png"/>
+c)<img link="jtp.png"/>
+d)<img src="jtp.png"/>
+
+3)The correct sequence of HTML tags for starting a webpage is:
+a)Head,title,html,body
+b)html,link,title,head
+c)html,link,title,body
+d)html,head,title,body
+
+4)which of the following tag is used to add rows in the table?
+a)<td><td>
+b)<th></th>
+c)<tr></tr>
+d)none of the above
+
+5)which of the following is the correct syntax for referring the external style sheet?
+a)<style src=example.css>
+b)<style src="example.css">
+c)<stylesheet>example.css</stylesheet>
+d)<link href="stylesheet" type="text/css" href="example.css">
+
+
+6)which of the following attribute is used to provide a unique name to an element?
+a)class
+b)id
+c)type
+d)none of the above
+
+
+7)which of the following HTML tag is used to display the text with scrolling effect?
+a)<marquee>
+b)<scroll>
+c)<div>
+d)none of the above.
+
+8)which of the following HTML tag is the special formatting tag?
+a)<p>
+b)<b>
+c)<pre>
+d)none of the above
+
+9)
+How to insert a background image in HTML?
+a)<body background="img.png">
+b)<img background>
+c)<bg-image="img.png">
+d)none of the above
+
+10)what are the types of unordered or bulleted list in HTML?
+a)Disc,square,triangle,
+b)polygon,triangle,circle
+c)disc,circle,square
+d)all of the above
+
+11)which of the following things are neccessary to create an html page?
+a)A text-editor
+b)web browser
+c)both a and b
+d)none of the above
+
+12)whate are some valid charcters sets available?
+a)UTF-8
+b)ANSI
+C)ASCII
+D)All of the above
+
+13)which of the following is correct about HTML?
+a)HTML uses User Defined Tags.
+b)HTML uses tags defined within the language.
+c)a and b
+d)none of the above.
+

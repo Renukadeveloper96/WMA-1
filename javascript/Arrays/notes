@@ -1,0 +1,194 @@
+Array is data structure that contains list of element of same data type.
+
+syntax
+
+var countries=["India","england","Australia","New Zealand"];
+
+var year=[2000,2021,2023];
+
+
+Filter method
+pop method
+shift method
+unshift method
+push method
+map method
+find method
+concat method
+slice method
+
+sort method
+
+Filter method:
+arrayname.filter(method);
+syntax:
+
+var age=[23,24,26,27,28];
+
+function myfun(age){
+return age>=23;
+}
+
+var selected=age.filter(myfun);//syntax
+
+console.log("ages of the selected candiates are "+selected);
+
+
+output:ages of the selected candiates are :24,26,27,28
+
+map method:
+
+syntax:
+arrayname.map(method);
+var age=[23,24,26,27,28];
+
+function myfun(age){
+return age-3;
+}
+
+var selected=age.map(myfun);//syntax
+console.log("four years age ages of the candiates are "+selected);
+
+
+output:four years age ages of the candiates are 20,21,23,24,25
+23-3=20,24-3=21,26-3=23,27-3=24,28-3-25
+
+20,21,23,24,25
+
+concat method:
+
+syntax:
+array1.concat(array2);
+
+var frontend=["html","css","bootstrap","js"];
+
+var backend=["java","php","nodejs"];
+
+var output=frontend.concat(backend);
+
+output:(7) ['html', 'css', 'bootstrap', 'js', 'java', 'php', 'nodejs']
+
+
+
+
+push method:add the vales in the end of the array
+syntax:
+array.push(item1,item2...item n)
+ex:
+var frontend=["html","css","bootstrap"];
+var output=frontend.push("js")
+console.log(output)
+
+unshift:add the values in the beginning of the array
+
+var frontend=["html","css","bootstrap"];
+var output=frontend.unshift("js")
+console.log(output)
+
+output:["js","html","css","bootstrap"];
+
+pop method:
+
+syntax:
+array.pop();
+always remove the last value of the array .
+
+ex:
+var frontend=["html","css","bootstrap"];
+frontend.pop();
+'bootstrap'
+console.log(frontend);
+(2) ['html', 'css']
+
+shift method:
+syntax: array.shift();
+ex:
+var frontend=["html","css","bootstrap"];
+frontend.shift();
+'html'
+console.log(frontend);
+VM1136:1 (2) ['css', 'bootstrap']
+
+
+
+find method
+syntax:
+array.find(function(currentvalue ,index,arr));
+
+ex:
+var frontend=["html","css","bootstrap"];
+frontend.shift();
+'html'
+console.log(frontend);
+VM628:1 (2) ['css', 'bootstrap']
+undefined
+var frontend1=["html","css","bootstrap"];
+undefined
+frontend.pop();
+'bootstrap'
+console.log(frontend);
+VM801:1 ['css']
+undefined
+console.log(frontend1);
+VM818:1 (3) ['html', 'css', 'bootstrap']
+undefined
+console.log(frontend1);
+VM834:1 (3) ['html', 'css', 'bootstrap']
+undefined
+frontend1.pop();
+'bootstrap'
+console.log(frontend1);
+VM870:1 (2) ['html', 'css']
+
+
+slice method:
+
+syntax:
+
+array.slice(start,end);
+var letter=["a","b","c","d","f","g","h"];//7th element
+
+returnedLetter=letter.slice(0,6);
+console.log(returnedLetter)
+
+
+var letter=["a","b","c","d","f","g","h"];
+returnedLetter=letter.slice(0,5);
+console.log(returnedLetter);
+
+VM1079:3 (5) ['a', 'b', 'c', 'd', 'f']
+undefined
+var letter=["a","b","c","d","f","g","h"];
+returnedLetter=letter.slice(2,5);
+console.log(returnedLetter);
+
+VM1117:3 (3) ['c', 'd', 'f']
+undefined
+returnedLetter=letter.slice(3,5);
+(2) ['d', 'f']
+returnedLetter=letter.slice(3,4);
+['d']
+console.log(returnedLetter);
+VM1269:1 ['d']
+undefined
+console.log(letter);
+VM1343:1 (7) ['a', 'b', 'c', 'd', 'f', 'g', 'h']
+undefined
+var letter=["a","b","c","d","f","g","h"];
+returnedLetter=letter.splice(3,4);
+console.log(returnedLetter);
+VM1423:3 (4) ['d', 'f', 'g', 'h']
+undefined
+var letter=["a","b","c","d","f","g","h"];
+returnedLetter=letter.splice(3,0);
+console.log(returnedLetter);
+VM1447:3 []
+undefined
+var letter=["a","b","c","d","f","g","h"];
+returnedLetter=letter.splice(3,1);
+console.log(returnedLetter);
+VM1461:3 ['d']
+undefined
+console.log(letter);
+VM1518:1 (6) ['a', 'b', 'c', 'f', 'g', 'h']
+undefined

@@ -1,0 +1,19 @@
+{
+  "employee": [
+    {
+      "fname": "KAJOL",
+      "lname": "xyz",
+      "email": "kajol123@gmail.com",
+      "password": "12345666",
+      "id": 1,
+      "address":""
+    },
+    {
+      "id": "8210",
+      "fname": "Upendra",
+      "lname": "delhi",
+      "email": "Upendra@gmail.com",
+      "password": "uppendra123$123"
+    }
+  ]
+}

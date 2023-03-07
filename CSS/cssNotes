@@ -1,0 +1,17 @@
+How you can create css in html?
+3 ways
+inline
+internal
+external
+
+
+WHAT IS DIFFERENCE BETWEEN CLASS AND ID?
+CLASS :selector can be applied to mulitiple Html element
+ID:select can be applied to unique
+
+
+css position property
+static
+relative
+fixed
+absolute

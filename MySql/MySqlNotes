@@ -1,0 +1,79 @@
+SELECT * FROM customers.customer;
+create database customers;
+USE customers;
+create table customers.customer(customerId int,name varchar(20));
+select * from customer;
+drop table customer;
+alter table customer add Address varchar(200);
+alter table customer add Age int;
+
+insert into customer values(102,"Triveni","karntaka",23);
+insert into customer values(103,"Divya"," bangalore",24);
+insert into customer values(104,"Rashmi","mysore",28);
+insert into customer values(105,"kajol","belgum",27);
+update customer Set Address="karntaka" where customerId=102;
+Delete from customer where name="Divya";
+drop table students6;
+ DELETE CustomerID FROM customer WHERE CustomerID = 6;
+ 
+ SELECT * FROM customer WHERE Address="bangalore" AND name="Triveni";-- --if you want two condition you need get from same row 
+
+                               two conditions are there in and operator
+                                in case first condition is true and and another condition is false=false
+    1 && 1=1
+    1&& 0=0
+    0 && 1=0
+    0 && 0=0
+    
+  SELECT * FROM customer WHERE Address='belgum' or name="kajol";
+  
+  1 || 0=1
+  1 || 1=1
+  0 || 0=0
+  0 || 1=1
+
+
+
+
+
+  details of orders and persons 
+
+  create table persons(PersonID int not null,
+LastName varchar(25),
+FirstName varchar(25),
+Age int,
+Primary key(PersonID));
+
+drop table persons;
+select * from persons;
+
+Insert into persons values(101,'abc1','Aadhi1',4);
+Insert into persons values(102,'abc2','Aadhi9',5);
+Insert into persons values(103,'abc3','Aadhi3',6);
+Insert into persons values(104,'abc4','Aadhi4',7);
+
+create table orders (OrderID int not null,
+OrderNumber int not null,
+PersonID int,
+Primary key(OrderID),
+constraint FK_PersonOrder Foreign key(PersonID) References persons(PersonID));
+select * from orders;
+insert into orders values(201,01,101);
+
+drop table orders;
+
+create table Persons(PersonID int not null,
+LastName varchar(25),
+FirstName varchar(25),
+Age int,
+constraint UC_Persons unique(PersonID,LastName));
+
+alter table persons
+drop index UC_Persons;
+drop table persons;
+select * from persons;
+Insert into persons values(101,'abc1','Aadhi1',4);
+Insert into persons values(102,'abc2','Aadhi9',5);
+Insert into persons values(104,'abc3','Aadhi3',6);
+Insert into persons values(104,'abc4','Aadhi4',7);
+

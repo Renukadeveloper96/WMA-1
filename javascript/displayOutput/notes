@@ -1,0 +1,21 @@
+javascript output statemnets
+
+total 4 ways of js display output.
+
+1)innerHTML
+2)document.write();
+3)window.alert()
+4) console.log()
+
+
+innerHTML: it will process an HTML Tag if found in a String
+
+document.write():It display a data in the HTML output
+
+window.alert() :It display the data into a in the alert Box 
+
+console.log():It display the  data in browser console
+
+
+
+

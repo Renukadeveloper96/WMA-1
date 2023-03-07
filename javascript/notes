@@ -1,0 +1,513 @@
+javascript is oop scripting language
+The code is run on browser only
+js codes are all in the form of text 
+
+
+what is js?
+
+javascript is powerfull & interpreted language 
+targted for web development
+
+it is used for webpages more interactive
+interpreted language->no compiler
+It is universal language, basically understand mobile,client side and server side scripting language
+
+
+web applications
+
+smart watches
+websites->google,facebook,netflex,amazon,games,youtube
+
+
+js frameworks are:
+Angular
+React
+Jquery->google 
+
+Benefits of js
+1)easy to learn
+2)speed
+3)no compiled
+4)platform independent
+
+
+what are the datatypes in js?
+undefined
+null
+boolean
+string 
+number
+object 
+BigInt
+
+undeclared :
+Its declared but assigned values
+throws run time error
+ex:
+int a;
+int a=20;
+
+undefined
+its declared but not assinged
+it returns undefined value;
+
+Null:
+Implies no value or no object
+
+String:
+It represents series of charcters
+& is written quote.It can be represented using single quote('') or double quote(" ")
+ex:
+var a="xyz";
+var a='zye'
+
+number:it represents the number and is written with or without decimal
+ex:
+var a=1;with decimal
+var b=2.3;without decimal
+
+BigInt:
+it can store large integers;
+ex:
+var a="123455666666666"
+
+boolean:It represents a logical entity & two values are true or false;
+true represents 1,false represents 0
+Booleans are generally user for conditions
+
+ex:
+var a="2";
+var b=3;
+var c=2;
+(a==b)//false
+(a==c)//true
+(a===c)//false
+
+object:collection of data in key-value pairs
+
+ex:
+var array1=[5,"hello",true,4.1]
+
+var city="london"
+city.toUpperCase()
+city[0];//l
+city[1];//o
+city[2];//n
+
+
+var city="london"
+city[0];
+o/p:'l'
+city[2];
+o/p:'n'
+city[30];
+o/p:undefined
+city[city.length-1]
+o/p:'n'
+city[city.length-2]
+o/p:'o'
+city[city.length-3]
+o/p:'d'
+
+var name="laxmi     .    "
+name.trim();
+
+notes:all extra spaces before and after removed 
+It is not able to remove the space which is between.
+
+var name="laxmi     .    "
+undefined
+name.trim();
+o/p:'laxmi     .'
+var a="John";
+var b="john";
+a==b
+o/p:false
+a.toUpperCase==b.toUpperCase;
+o/p:true
+
+slice;
+slice is nothing that's does not affect on the original array1
+
+ex:
+var city="amsterdam"
+var name="Bhumika"
+
+name.slice(1);
+
+var name="Renuka"
+name.slice(1);
+o/p:'enuka'
+name.slice(0);;
+o/p:'Renuka'
+name.slice(3,6);
+o/p:'uka'
+
+
+var city="aMsTerDam"
+city.charAt(0).toUpperCase;
+
+
+var city="aMsTerDam";
+undefined
+city.charAt(0).toUpperCase();
+o/p:'A'
+city.slice(1).toLowerCase();
+o/p:'msterdam'
+city.charAt(0).toUpperCase()+city.slice(1).toLowerCase();
+o/p:'Amsterdam'
+
+var a="Welcome to java";
+a.replace('java','js')
+o/p:"Welcome to js"
+
+var a="javascript";
+a.replace('a','A');
+o/p:'jAvascript'
+a.replace('/a/g','A');
+o/p:'javascript'
+a.replace(/ a /g,'A');
+o/p:'javascript'
+a.replace(/a/g,'A');
+o/p:'jAvAscript'
+
+var name="laxmi     .    "
+name.replace(/ /g,'');
+o/p:'laxmi.'
+name.trim();
+o/p:'laxmi     .'
+
+
+split:
+
+var a="I AM LEARNING JAVASCRIPT"
+a.split("")
+
+var a=" I AM LEARNING JAVASCRIPT";
+undefined
+a.split(" ");
+(5) ['', 'I', 'AM', 'LEARNING', 'JAVASCRIPT']
+a.split(" ");
+(5) ['', 'I', 'AM', 'LEARNING', 'JAVASCRIPT']
+a.split("");
+(25) [' ', 'I', ' ', 'A', 'M', ' ', 'L', 'E', 'A', 'R', 'N', 'I', 'N', 'G', ' ', 'J', 'A', 'V', 'A', 'S', 'C', 'R', 'I', 'P', 'T']
+var a="I AM LEARNING JAVASCRIPT";
+undefined
+a.split(" ");
+(4) ['I', 'AM', 'LEARNING', 'JAVASCRIPT']
+var b=['I', 'AM', 'LEARNING', 'JAVASCRIPT'];
+undefined
+var a=["j","a","v","a","s","c","r","i","p","t"];
+undefined
+a.toString();
+'j,a,v,a,s,c,r,i,p,t'
+a.toString().replace(/,/g,'');
+'javascript'
+a.toString().replace(/,/g,'+');
+'j+a+v+a+s+c+r+i+p+t'
+a.toString().replace(/,/g,'-');
+'j-a-v-a-s-c-r-i-p-t'
+a.toString().replace(/,/g,'');
+'javascript'
+
+var name="KGF";
+var rating=4.5;
+var type="action";
+var ind="sandalwood";
+
+var out="An " +name+" is an "+type+" movie with rating of "+rating+" and from ind " +ind+    "."
+
+out
+'An KGF is an action movie with rating of 4.5 and from ind sandalwood.'//es5
+
+
+var name="KGF";
+var rating=4.5;
+var type="action";
+var ind="sandalwood";
+
+var out=`An  ${name} is an ${type} movie with rating of ${rating} and from ind  ${ind}    .`
+
+out
+'An  KGF is an action movie with rating of 4.5 and from ind  sandalwood    .'
+
+
+var a=10
+var b=20;
+undefined
+a+b
+30
+a-b;
+-10
+var a="Hi"
+undefined
+var b="javascript"
+undefined
+a+b
+'Hijavascript'
+a+""+b
+'Hijavascript'
+a+" "+b;
+'Hi javascript'
+
+var a=10
+undefined
+var b=20;
+undefined
+b-a;
+10
+a*b
+200
+a/b;
+0.5
+b/a
+2
+var a="Hi"
+undefined
+var b="js";
+undefined
+a-b;
+NaN
+a*b;
+NaN
+a+b 
+'Hijs'
+
+
+var a=10;
+var b=20;
+b%a;
+0
+2%4;
+2
+3%4;
+3
+1%4
+1
+4%4;
+0
+4%4;
+0
+4%3
+1
+
+"10"+20+30;
+string+number=string
+string-number=number
+number+string=string
+
+
+"20"-1;
+"20"+1;
+
+objects:
+
+
+
+var moviename="kantara"
+var movieRating=4.5
+var movieType="Action";
+
+var movie=[{
+    moviename:"kantara",
+    movieRating:4.5,
+    movieType:"Action"
+},
+{
+    moviename:"kgf",
+    movieRating:5.5,
+    movieType:"Action"
+}
+]
+
+examples
+var movie=[{
+    moviename:"kantara",
+    movieRating:4.5,
+    movieType:"Action"
+},
+{
+    moviename:"kgf",
+    movieRating:4.5,
+    movieType:"Action"
+}
+]
+
+undefined
+typeof(movie);
+'object'
+movie[1].moviename;
+'kgf'
+movie[0].moviename;
+'kantara'
+movie[0].moviename;
+'kantara'
+movie[2].movieType;
+VM3469:1 Uncaught TypeError: Cannot read properties of undefined (reading 'movieType')
+    at <anonymous>:1:10
+(anonymous) @ VM3469:1
+movie[1].moviename;
+'kgf'
+movie[1].movieRating;
+4.5
+movie[1].movieType;
+'Action'
+movie[0].moviename;
+'kantara' 
+
+
+Javascript variables
+
+3 ways
+using var 
+using let
+using const
+
+variables:storing data values
+
+ex:
+var x=5;
+var y=6;
+
+var z=x+y;
+
+const :If you want general rule always declare variables with const
+
+ex: const price =1;//value can't be change
+const price2=8;//value can't be change
+
+let total=price1+price2;//value can be changed
+
+
+ex:var
+console.log(x);
+var x=5;//undefined
+console.log(x);//5
+
+
+ex:let
+console.log(x);
+let x=5;//x is not defined
+console.log(x);//error
+
+var a=20;
+var a=30;
+console.log(a);
+
+
+const price1=5;
+undefined
+const price2=10;
+undefined
+let total=price1+price2;
+undefined
+total
+15
+var total=price1+price2;
+VM369:1 Uncaught SyntaxError: Identifier 'total' has already been declared
+    at <anonymous>:1:1
+(anonymous) @ VM369:1
+var total1=price1+price2;
+undefined
+total1
+15
+const price3=12;
+undefined
+const price4=14;
+undefined
+let total=price3+price4;
+undefined
+total
+26
+let total=price1+price2;
+undefined
+total
+15
+
+
+javascript operators
+
+Assignment operator
+
+=,   +=,    -=,    *=, /= , %=
+
+
+var count=1;
+count +=1//count=count+1;
+console.log(count)
+
+comparison operator
+
+==,===,!=,!==,>=,<=,<,>
+
+var x=10
+
+notes:
+
+||
+true+true=true;
+true+false=true;
+false+true=true;
+false+False=false;
+
+&&
+true+true=true;
+true+false=false;
+false+true=false;
+false+False=false;
+
+
+Math concepts
+Math.random()
+
+
+ex:
+Math.random()
+0.6728108852073966
+Math.random()*1000
+445.064903661482
+Math.random()*100000
+90546.18152415872
+Math.floor(10.1)
+10
+Math.floor(10.9)
+10
+Math.ceil(10.1);
+11
+Math.ceil(10.9);
+11
+Math.floor(9.9);
+9
+Math.log(10);
+2.302585092994046
+Math.E
+2.718281828459045
+Math.round(10.3);
+10
+Math.round(10.7);
+11
+Math.round(11.5);
+12
+Math.ceil(10.6)
+11
+Math.floor(10.6)
+10
+
+Ternary condition
+
+var a=11;
+a>10?"hi":"bye";
+'hi'
+var a=9;
+a>10?"hi":"bye";
+'bye'
+var a=11;
+a>10?"green":"red"
+
+'green'
+var a=9;
+9>10?"green":"red"
+
+'red'
+
+Mouse Event

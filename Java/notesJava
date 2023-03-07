@@ -1,0 +1,693 @@
+What is java Programming?
+Java is an Object-Oriented programming language developed by James Gosling in the early 1990s.
+First Version of Java(JDK 1.0).It was introduced on 23rd Jan 1996 by MicroSystem.
+
+
+syntax of java
+
+public class Sample{
+    public static void main(String[] args) {
+        Systout
+    }
+}
+
+save->class_name.java
+compilation:javac class_name.java
+Excecution:javac class_name
+
+public is an access specifier that declared the main method()as unprotected .this is a similar to c++
+
+void:does not return any value;
+
+why java is platform independent language?
+java is a platform independent language bcz that does not dependent any platform
+java programs are compiled into byte compiled
+
+java features are:
+object Oriented
+platform independent
+simple language
+secure
+portable
+compiled and interpreted
+Robust
+Distrubuted
+muti-threaded
+performance
+
+
+Control stmts/control flow in java
+
+The statements in the code are excecuted according to the order in which they appear.however,java provides statements that can be used 
+to control the flow of java code.such statements are called control flow statements.
+
+
+Three types of statements
+1)Decision making statements
+2)loop statements
+3)jump statements
+
+
+
+1)Decision making statements
+
+a)if-statements:
+four types if-statements
+1)simple if statements
+2)if-else statements
+3)if-else-if statements
+4)nested if-statements
+
+b)Switch statements
+
+
+1)if statements
+syntax:
+if(cond){
+    statements 1;
+}
+
+ex:
+
+int a=10;
+int b=20;
+if(b>a){
+    sys
+}
+
+2)if-else
+syntax
+if(cond){
+    statements 1;
+}else{
+    statements 2;
+}
+
+3)if-else-if
+syntax:
+if(cond1){
+    statements 1;
+}else if(cond2){
+    statements 2;
+}else{
+    statments 3;
+}
+
+
+4)nested if-statements
+
+if(cond1){
+    if(cond1){
+        statement 1;
+    }else if(cond2){
+        statement 2
+    }
+    else{
+        statement 3;
+    }
+}
+else{
+    statement n;
+}
+
+
+b)switch statement
+
+
+*cases cannot be duplicate
+*default stmt is excecuted when any of the case does'nt match the value of expression
+
+
+2)loop statements
+
+a)do while loop
+b)while loop
+c)for loop
+d)for-each loop
+
+
+for loop
+syntax:
+for(initialization;condition;increament/decreament){
+    //block of statements
+}
+
+for each
+
+syntax:
+for(data_type var:array_name/collection_name){
+    //statements;
+
+}
+
+
+while
+while :condition is checked at the start of the loop.if the condition is true,then the loop body will be excecuted.otherwise,the statements after the loop will be executed
+
+syntax:
+while(condition){
+    //stmts
+}
+
+do while:
+syntax:
+do{
+    //statement 1;
+}while(condition)
+
+
+3)jump statements
+
+a)break statement
+b)continue statements
+
+break statements;
+
+
+
+variables :variable is a name of memory location.
+there are three types of variables
+1)local
+2)instance
+3)static
+
+local: a variable declared inside the body of the method is caled local variable.
+you can use this only within that method and other methods in the class
+local variable cannot be defined with "static" keyword
+
+instance:
+a variable declared inside the class but outside the body of the method is called an instance variable.
+it is not declared as static
+
+
+static:
+a variable that is declared as static is called a static variable.it cannot be local
+
+
+ex:instance
+
+
+class Room{
+    float a=30;
+    float=89;
+}
+public class A
+{
+    static int m=100;//static variable
+    void method(){
+        int n=90;//local variable
+    }
+    public static void main(String[] args){
+        int data=50//instance variable
+    }
+
+}
+
+method in java
+a method is a block code or collection of statements or a set of code grouped together to perform a certain task or operation
+
+
+advantages:
+reusability of  code.
+
+if you write a method once and you can use many times.
+
+
+constructors in java?
+constructor is special type of member function/method.which is used to initialization the object.
+constructor is a block of the codes similar to the method.
+It is called when an instance of the class is created.
+
+There are two types of constructor:
+1)default constructor (no-arguments)
+2)parameterized constructor
+
+Rules:
+1)constructor name must be same as its class name
+2)a constructor must have no explicit return type
+3)java constructor cannot be abstract,static,final and synchronized
+
+
+    package constructor;
+
+    public class Employee {
+	
+	int empid;
+	double empSalary;
+	String empName;
+	String empMobileNo;
+	String empAddress;
+	
+    public Employee(int empid, int empSalary, String empName, String empMobileNo, String empAddress) {
+	this.empid=empid;
+	this.empSalary=empSalary;
+	this.empName=empName;
+	this.empMobileNo=empMobileNo;
+	this.empAddress=empAddress;
+	}
+	void empDisplay() {
+		System.out.println("Employee Details  \nEmployee Id:"+empid+ "\nEmployee Salary:"+empSalary+"\nEmployee Name:"+empName+"\nEmployee MobileNo:"+empMobileNo+"\nEmployee Address:"+empAddress);
+	}
+
+	@Override
+    public String toString() {
+	return "Employee [empid=" + empid + ", empSalary=" + empSalary + ", empName=" + empName + ", empMobileNo="
+			+ empMobileNo + ", empAddress=" + empAddress + "]";
+    }
+
+
+	public static void main(String[] args) {
+
+		System.out.println("Employee ID is 101");
+		Employee employee=new Employee(101,20000,"KAJOL","1882883878","HUBLI");
+	
+		Employee employee1=new Employee(102,30000,"Rashmi","8536152255","Dharwad");
+		
+		employee.empDisplay();
+		System.out.println("Employee ID is 102");
+		employee1.empDisplay();
+		
+	}
+
+    }
+
+    Java OOPS Concepts
+
+    oop:object oriented programming
+
+    its faster and cheaper
+    development and maintance.
+
+    1)abstraction
+    2)inheritance
+    3)polymorphism 
+    4)encapsulation
+
+    Notes:
+    Everything is an object Developer manipulates objects that uses message passing.
+    Every object is an instance of a class.
+
+    abstraction:
+    It show essential feature without including background details the relevant data
+
+    outer layer used in terms of design.
+
+    Hidding internal implmentations details and highlight the set of service what are offering is called abstraction
+
+    ex:Bank ATM Machine.
+
+    Advantages are:
+    without affecting outside the person .we can achieve internal implementation.
+
+
+    encapsulation:
+
+    Wrapping up of data and function into single unit is called encapsulation
+
+    if any java class follows data hidding and abstraction such type of class is called encapsulation.
+
+    encapsulation=abstraction+data hidding
+    Hidding of the data outside person can't access our data directly
+
+    By using private modifier.
+
+    ex:
+    class Account{
+        private double balance=70000;
+
+        //setter and getter methods;
+    }
+
+    Advantages are:
+    we can achieve security 
+
+    polymorphism:
+    Polumorphism means same name with different form of the concept is called polymorphism
+
+    2 types:
+    1)compile/static/early binding/overloading 
+    2)Runtime/dynamic /late binding /overriding
+
+
+    Overloading:if more than one method same name with same identify but with different signature(agruments)is called method overloading.
+
+
+    Overriding:it is possible to use with inheritance.
+
+    if two methods hava same name with same argumment .This is called overriding
+
+    overriding method is called Runtime ploymorphism.
+    Overriding method is called Runtime ploymorphism.
+    
+
+    2)inheritance
+    Relationship between more than two classes.
+    using by extends keyword.
+
+
+
+    Exception:
+    Exception is an event that distrupts the normal flow of the program.It is an Object which is thrown at runtime.
+
+    Exception handling
+    Exception handling is a mechanism to handle runtime errors such as classNotFoundException,IO Exception,SQL Exception,
+    Remote Exception.
+
+    Advantages of Exception handling
+    This is to maintain the normal flow of the appilication
+
+    Ex:
+    If you have 10 statements in java program and an exception occurs at statement 8 the rest of the code will not be excecuted.
+    therfore statements 9 to 10 will not be excecuted.
+    However,When we perform exception handling .the rest of the statements will be  excecuted.That is why we use exception handling in java.
+
+    Type of exception
+    1)checked Exception
+    2)UnChecked Exception
+    3)errors
+
+    1)checked Exception
+    The Exception which are checked by compiler for smoth exception of pragram at runtime. it is called checked Exception
+
+    If your method through checked Exception then it should  handle Exception using try catch block or throws keyword .otherwise program will give compilation errors
+
+    EX:
+
+    SQL Exception
+    IO Exception
+    classNotFoundException
+
+
+    2)UnChecked Exception:
+    Exception which are not checked by the compiler are called unchecked Exception
+
+    ex:
+    NullPointerException
+    ArrayIndexOutBoundException
+    IllegalArgumentException
+    IllegalStateException
+
+
+    3)errors
+    Error is recoverable.
+    ex:
+    outofMemoryError,VirtualMachineError,AssertionError etc;
+
+    UserDefinedException
+    1)All Exception must be child of throwable
+    2)throw keyword always returns inside the method
+
+
+    Java String
+    String :is a sequence of charcter.String is an object that represents a sequence of charcters.
+
+    Tha java.lang.String class is created.
+
+    Two ways to create string object
+    1)String literal
+    2)new keyword
+
+    1)String literal :String literal is created by double quotes.
+    ex:
+    String s="welcome",
+    char c='w'
+
+    jvm checks the "string constant pool" first.
+    if the string already exists in the pool, a reference to the pooled instance is returned.
+
+    If the string does not exist int the pool,a new String instance is created and placed in the pool.
+
+    2)new keyword
+    jvm will create a new String object in the normal(non-pool)heap memory,and the literal "welcome" will be placed in the string constant pool.
+    The variable name will be refer to the object in a heap(non-pool)
+
+
+    String method
+    char charAt(int index);
+    int length();
+    string concat(String str)
+    String toLowerCase();
+    String toUpperCase();
+    String trim();
+
+
+    ex:char[] ch={'j','a','v','a'}
+    String s=new String(ch);
+
+    output:java
+
+
+    Thread:
+    Generally all the program have atleast one thread known as main method
+    that is provided by the jvm or java virtual machine at the starting of program's excecution.
+
+
+    excecuting several task simultaneously where each task is separate independent part of the same 
+    program is called thread based multitasking and each independent part is called thread
+
+    2 method
+    by extending thread class
+    by implementing runnable interface
+
+
+    Lifecycle of thread?
+    New:In this state,Thread class object is created using a new operator,but thread is not a live.thread does not start until we call 
+    the start() method.
+
+    Runnable():thread is ready to run after calling start()method.
+    thread is not yet selected by the thread shedular
+
+    Running:Thread shedular picks the thread from the ready state, & method ,Thread is running
+
+    wait():
+    a thread is not running but still alive or its waiting for other thread to finish.
+
+    Multithreading
+    Multithreading is a process of excecuting multiple threads simultaneously,Multithreading is used to obtain the multasking.it consumes
+    less memory and gives the fast and effient performance.
+
+
+    Advantages of multithreading
+
+    Thread is lightweight
+    threads share the same address space
+    the cost of communication between the process is low.
+
+
+    collections:
+    why we need to go for collections
+    what is collection framework
+    Collection Hierachy
+    List interface & implementations
+    Set interface & implementations
+    Queue interface &implementations
+    Map interface & implementations
+
+    if you want to store 100 value like 23,24,1,2....n values 
+    you want 100 variable
+
+     variables:to store the data
+     datatype-
+     1)primitive datatypes
+     byte short int long float double char boolean
+
+     2)referenced data types(Arrays,string ,class etc);
+
+     disadvantages are;
+     Not recommended to overcome this problem Arrays concept came
+
+
+     Array:
+     we can store group of values in single variable;
+
+     int[] a=new int[5];
+     arr[0]=100;
+     arr[1]=200;
+     arr[2]=300;
+     arr[3]=400;
+     arr[4]=500;
+
+
+     Limitations of Arrays.
+    1) Array size is fixed
+     can't increase size
+     can't decrease size
+    2)We can store only homogenious values (same type of values)
+    homogenious means :int a[]=new int[5];
+                        a[0]=10;
+                        a[1]="Renuka"
+                        a[2]=10.00;
+
+
+
+                        100 student objects in a one variable
+
+                        Ex:
+                        package collections;
+
+                        public class Student1 {
+                            private String name;
+
+                            public Student1(String name) {
+                                this.name=name;
+                            }
+
+                            public static void main(String[] args) {
+                                Student1 s[]=new Student1[5];
+                                s[0]=new Student1("ravi");
+                                s[1]=new Student1("raju");
+                                
+                            s[2]=new Student1("rani");
+                            s[3]=new Employee(101,"Ramesh");
+                            
+                            }
+
+                        }
+object array :object is default class object in java
+java.lang.package
+1) Array size is fixed
+     can't increase size
+     can't decrease size
+2)We can store  homogenious  and hetrogenious values (diffent type of values)
+
+
+Limitations of object
+fixed size
+every requirement program should write logically
+
+Collections :
+To overcome Arrays concept problem so collection came
+
+collection are used to group of objects/values
+collections are growable in nature
+dynamically size can be increased and decreased based on data
+
+we can store any type of data in collection
+
+customized
+(homegenious and hetrogenious)
+
+collections providinng predefined methods to insert,update,delete,retrieve,sort .
+
+Collection is an entity/container which is use to store group of object
+
+Collections is framework
+Framework means ready made software 
+collectons is called as framework bcz its providing predefined interfaces,class and method to perform on data.
+
+
+
+set
+
+ex:
+package collections;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListEx1 {
+
+	public static void main(String[] args) {
+		
+		List l=new ArrayList();
+		l.add(100);//index of 0
+		l.add(100);//index of 1
+		l.add(200);//index of 2
+		l.add(300);//index of 3
+		l.add("raju");//index of 4
+		l.add("rani");//index of 5
+		l.add(100.60);//index of 6
+		l.set(1, 23);
+//		l.add(1, 23);
+		System.out.println(l);
+
+	}
+
+}
+
+output:[100, 23, 200, 300, raju, rani, 100.6]
+
+
+add:
+Ex:
+package collections;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListEx1 {
+
+	public static void main(String[] args) {
+		
+		List l=new ArrayList();
+		l.add(100);//index of 0
+		l.add(1111111);//index of 1
+		l.add(200);//index of 2
+		l.add(300);//index of 3
+		l.add("raju");//index of 4
+		l.add("rani");//index of 5
+		l.add(100.60);//index of 6
+//		l.set(1, 23);
+		l.add(1, 23);
+		System.out.println(l);
+
+	}
+
+}
+output:
+[100, 23, 1111111, 200, 300, raju, rani, 100.6]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
