@@ -34,10 +34,7 @@ drop table students6;
 
 
 
-
-
-  details of orders and persons 
-
+details of orders and persons 
   create table persons(PersonID int not null,
 LastName varchar(25),
 FirstName varchar(25),

@@ -1,0 +1,29 @@
+<h2>Welcome  to {{company}}  infosys</h2>
+<h2>{{2+2}}</h2>
+<h2>{{a=2+2}</h2>
+<h2>{{"Welcome"+ "&nbsp;"+name}}</h2>
+<h2>{{name.length}}</h2>
+<h2>{{name.toUpperCase()}}</h2>
+<h2>{{name.toLowerCase()}}</h2>
+<h2>{{greetUser()}}</h2>
+<!-- <h2>{{methodOne()}}</h2> ctrl+?-->
+
+<h1> Value and attribute</h1> 
+<input [id]="myId" type="text" value="ashwini">
+<br>
+<br>
+<input [disabled]="isDisabled" id="{{myId}}" type="text" value ="ashwini">
+<input bind-disabled="isDisabled" id="{{myId}}" type="text" value="rashmi">
+<h2 class="text-success">Angular 3rd day</h2>
+<h2 [class]="successClass">Angular </h2>
+
+<h1 [class.text-primary]="hasError">Nirmaan Infosys</h1>
+<h1 [ngClass]="messageClasses">Ng CLASS</h1>
+<h2 [style.color]="'orange'">style binding</h2>
+
+
+
+
+
+
+
