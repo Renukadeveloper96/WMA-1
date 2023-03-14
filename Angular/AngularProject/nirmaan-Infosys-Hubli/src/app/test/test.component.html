@@ -5,6 +5,7 @@
 <h2>{{name.length}}</h2>
 <h2>{{name.toUpperCase()}}</h2>
 <h2>{{name.toLowerCase()}}</h2>
+
 <h2>{{greetUser()}}</h2>
 <!-- <h2>{{methodOne()}}</h2> ctrl+?-->
 
@@ -19,7 +20,15 @@
 
 <h1 [class.text-primary]="hasError">Nirmaan Infosys</h1>
 <h1 [ngClass]="messageClasses">Ng CLASS</h1>
-<h2 [style.color]="'orange'">style binding</h2>
+<h2 [style.color]="'red'">style binding</h2>
+<h2 [style.color]="hasError?'green':'red'">style binding</h2>
+
+<h2></h2>
+
+
+
+
+
 
 
 

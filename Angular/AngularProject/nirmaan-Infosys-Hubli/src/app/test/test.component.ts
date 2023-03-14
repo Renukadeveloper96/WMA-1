@@ -27,10 +27,12 @@ export class TestComponent implements OnInit {
     "text-danger":!this.hasError,
     "text-special":this.isSpecial
   }
+  
   constructor(){}
   ngOnInit(){}
 
   greetUser(){
     return "Hi"+" "+this.name
   }
+
 }
