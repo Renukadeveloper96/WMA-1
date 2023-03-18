@@ -15,3 +15,9 @@
     font-family: italic;
     font-size:20px;
 }
+.ngIf{
+    color:green;
+}
+.else{
+    color:red
+}

@@ -22,9 +22,24 @@
 <h1 [ngClass]="messageClasses">Ng CLASS</h1>
 <h2 [style.color]="'red'">style binding</h2>
 <h2 [style.color]="hasError?'green':'red'">style binding</h2>
+<button (click)="greeting='welcome to nirmaan organization infosys'">click</button>
+    {{greeting}}
+    <br><br>
+<input #myId type="text" placeholder="username">
 
-<h2></h2>
+<br><br>
+<button (click)="logMessage(myId.value)">Login</button>
+<button (click)="logMessageOne('Example')">Click me</button>
+<br>
+<br>
+<input type="text" [(ngModel)]="name2" >
+{{name2}}
 
+<h2 *ngIf="false">CHAYA</h2>
+<h2 *ngIf="displayName;else elseBlock" class="ngIf">Ashwini</h2>
+<ng-template #elseBlock>
+    <h2 class="else">Name is Hidden</h2>
+</ng-template>
 
 
 

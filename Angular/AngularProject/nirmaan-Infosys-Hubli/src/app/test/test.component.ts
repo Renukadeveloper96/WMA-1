@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component,Input,OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-test',
@@ -22,17 +22,28 @@ export class TestComponent implements OnInit {
   public successClass="text-success";
   public hasError=true;
   public isSpecial=true;
+  public name2="  ";
+  public greeting="";
   public messageClasses={
     "text-success":!this.hasError,
     "text-danger":!this.hasError,
     "text-special":this.isSpecial
   }
+  public displayName=false;
   
   constructor(){}
   ngOnInit(){}
 
   greetUser(){
     return "Hi"+" "+this.name
+  }
+  logMessage( value:string){
+  console.log("hello"+" "+value)
+  }
+  logMessageOne(name:string){
+    {
+      window.alert(name);
+    }
   }
 
 }
